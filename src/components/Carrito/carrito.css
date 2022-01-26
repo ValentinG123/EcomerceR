@@ -1,0 +1,25 @@
+.fa-trash-alt{
+    color: #D84727;
+    font-size: 1.7rem;
+}
+.cart-content{
+    height: 150px;
+    border-bottom: solid black 2px;
+    margin: 15px 0;
+}
+.img-cart{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.btn-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    
+}

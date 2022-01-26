@@ -1,38 +1,290 @@
-.App {
-  text-align: center;
+/*BUTTONS*/
+.bg-btn{
+  width: 220px;
+  height: 60px;
+  border: none;
+  font-family: 'Taviraj', serif !important;
+
+}
+/*Pago sactifacctorio*/
+
+.form-control {
+  border-bottom: 2px solid #eee !important;
+  border: none;
+  font-weight: 600
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #8bbafe;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  border-bottom: 2px solid blue !important
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inputbox {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%
+}
+
+.inputbox span {
+  position: absolute;
+  top: 7px;
+  left: 11px;
+  transition: 0.5s
+}
+
+.inputbox i {
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  transition: 0.5s;
+  color: #3F51B5
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0
+}
+
+.inputbox input:focus~span {
+  transform: translateX(-0px) translateY(-15px);
+  font-size: 12px
+}
+
+.inputbox input:valid~span {
+  transform: translateX(-0px) translateY(-15px);
+  font-size: 12px
+}
+
+.card-blue {
+  background-color: #492bc4
+}
+
+.hightlight {
+  background-color: #5737d9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 14px
+}
+
+.yellow {
+  color: #fdcc49
+}
+
+.decoration {
+  text-decoration: none;
+  font-size: 14px
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #492bc4;
+  border-color: #492bc4
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #492bc4;
+  border-color: #492bc4
+}
+
+.decoration:hover {
+  text-decoration: none;
+  color: #fdcc49
+}
+/*Tarjetas*/
+.card-login{
+  border-radius: 1rem;
+}
+.img-login{
+  border-radius: 1rem 0 0 1rem;
+}
+/*BACKGROUNDS*/
+.btn-bg{
+  background:  #D84727;
+
+}
+.heart-bg{
+  color:  #D84727;
+
+}
+.bg{
+  background: #F1DDC9;
+}
+/*FONTS*/
+.title{
+color:  #333333;
+font-size: 60px;
+}
+.f-bg{
+  color: #333333 !important;
+}
+.ff{
+  font-family: 'Taviraj', serif !important;
+}
+.infoff{
+  font-family: 'Nunito', sans-serif;
+}
+/*SIZES*/
+.w-30{
+  width: 25%;
+}
+.mt-25{
+  margin-top: 100px;
+}
+.my-8{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.my-6{
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+.mx-100{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.top-10{
+  top: -10%;
+}
+.z-index{
+  z-index: 10;
+}
+/*Hover*/
+
+
+/*Main*/
+.logo-inicio{
+  width: 350px;
+  height: 450px;
+  opacity: .9;
+  
+}
+.img-content{
+  top: 15%;
+}
+.content-main{
+  background: #F1DDC9 ;
+  height: 450px !important;
+}
+.img-box{
+  width: 130px;
+  height: 100px;
+}
+.img-product{
+  width: 60px;
+  height: 60px;
+}
+.img-side{
+  height: 500px;
+  width: 100%;
+  top: 10%;
+  right: 20%;
+}
+.side-content{
+  height: 500px;
+
+}
+@media screen and (max-width: 1024px) {
+  /*BUTTONS*/
+.bg-btn{
+  width: 200px;
+  height: 50px;
+
+}
+  /*Main*/
+  .logo-inicio{
+    width: 250px;
+    height: 300px;
+  }
+  .title{
+    color:  #333333;
+    font-size: 36px;
+    }
+    .content-main{
+      height: 300px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .products{
+    display: none;
+  }
+  .mx-100{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  /*Main*/
+  .logo-inicio{
+    width: 150px;
+    height: 200px;
+  }
+  .title{
+    color:  #333333;
+    font-size: 21px;
+    }
+    .content-main{
+      height: 200px !important;
+      margin: 0px !important;
+      position: absolute;
+      left: 0;
+      max-width: 100% !important;
+    }
+    .infoff{
+      font-family: 'Nunito', sans-serif;
+      font-size: 11px;
+    }
+
+  /*Side*/
+  .img-side{
+    height: 300px;
+  }
+  .side-content{
+    height: 300px;
+  
+  }
+  .text-side{
+    font-size: 20px !important;
+  }
+  .text-s{
+    font-size: 16px !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 380px) {
+    /*Main*/
+    .logo-inicio{
+      width: 100px;
+      height: 150px;
+    }
+    .title{
+      color:  #333333;
+      font-size: 18px;
+      }
+      .content-main{
+        height: 150px !important;
+      }
+      .infoff{
+        font-family: 'Nunito', sans-serif;
+        font-size: 11px;
+      }
+    /*Side*/
+    .img-side{
+      height: 150px;
+    }
+    .side-content{
+      height: 150px;
+    
+    }
+    .text-side{
+      font-size: 16px !important;
+    }
+    .text-s{
+      font-size: 11px !important;
+    }
 }
