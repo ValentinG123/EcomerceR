@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './main.css';
 const SubMain = () => {
   const main = [
     {
@@ -27,19 +27,21 @@ const SubMain = () => {
     height: '115px',
   };
   return (
-    <div className="row container w-100 " style={containerStyle}>
-      {main.map((data) => (
-        <div
-          className="container w-100 h-100 d-flex col bg-white my-6 mx-2 text-dark position-relative flex-column justify-content-start "
-          key={data.id}
-        >
-          <h4 className="mt-5 mx-3">{data.name}</h4>
-          <p className="mt-3">{data.descrip}</p>
-          <div className=" z-index position-absolute bottom-0 end-0 d-flex justify-content-end align-items-end h-50 w-100">
-            <img src={data.img} alt="" className="bg-img" style={imgStyle} />
+    <div className="submain-content">
+      <div className="row container w-100" style={containerStyle}>
+        {main.map((data) => (
+          <div
+            className="container w-100 h-100 d-flex col bg-white my-6 mx-2 text-dark position-relative flex-column justify-content-start "
+            key={data.id}
+          >
+            <h4 className="mt-5 mx-3">{data.name}</h4>
+            <p className="mt-3">{data.descrip}</p>
+            <div className=" z-index position-absolute bottom-0 end-0 d-flex justify-content-end align-items-end h-50 w-100">
+              <img src={data.img} alt="" className="bg-img" style={imgStyle} />
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

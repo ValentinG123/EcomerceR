@@ -1,17 +1,30 @@
+.instagram-img {
+  width: 125px !important;
+  height: 125px;
+}
 /*BUTTONS*/
-.bg-btn{
+.btn-clear{
+  height: 50px;
+  font-size: 21px;
+
+}
+.btn-add{
+  width: 100% !important;
+  height: 35px !important;
+  font-size: 16px;
+}
+.bg-btn {
   width: 220px;
   height: 60px;
   border: none;
   font-family: 'Taviraj', serif !important;
-
 }
 /*Pago sactifacctorio*/
 
 .form-control {
   border-bottom: 2px solid #eee !important;
   border: none;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .form-control:focus {
@@ -21,20 +34,20 @@
   outline: 0;
   box-shadow: none;
   border-radius: 0px;
-  border-bottom: 2px solid blue !important
+  border-bottom: 2px solid blue !important;
 }
 
 .inputbox {
   position: relative;
   margin-bottom: 20px;
-  width: 100%
+  width: 100%;
 }
 
 .inputbox span {
   position: absolute;
   top: 7px;
   left: 11px;
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .inputbox i {
@@ -42,27 +55,27 @@
   top: 13px;
   right: 8px;
   transition: 0.5s;
-  color: #3F51B5
+  color: #3f51b5;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0
+  margin: 0;
 }
 
-.inputbox input:focus~span {
+.inputbox input:focus ~ span {
   transform: translateX(-0px) translateY(-15px);
-  font-size: 12px
+  font-size: 12px;
 }
 
-.inputbox input:valid~span {
+.inputbox input:valid ~ span {
   transform: translateX(-0px) translateY(-15px);
-  font-size: 12px
+  font-size: 12px;
 }
 
 .card-blue {
-  background-color: #492bc4
+  background-color: #492bc4;
 }
 
 .hightlight {
@@ -70,221 +83,282 @@ input::-webkit-inner-spin-button {
   padding: 10px;
   border-radius: 10px;
   margin-top: 15px;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .yellow {
-  color: #fdcc49
+  color: #fdcc49;
 }
 
 .decoration {
   text-decoration: none;
-  font-size: 14px
+  font-size: 14px;
 }
 
 .btn-success {
   color: #fff;
   background-color: #492bc4;
-  border-color: #492bc4
+  border-color: #492bc4;
 }
 
 .btn-success:hover {
   color: #fff;
   background-color: #492bc4;
-  border-color: #492bc4
+  border-color: #492bc4;
 }
 
 .decoration:hover {
   text-decoration: none;
-  color: #fdcc49
+  color: #fdcc49;
 }
 /*Tarjetas*/
-.card-login{
+.card-login {
   border-radius: 1rem;
 }
-.img-login{
+.img-login {
   border-radius: 1rem 0 0 1rem;
 }
 /*BACKGROUNDS*/
-.btn-bg{
-  background:  #D84727;
-
+.btn-bg {
+  background: #d84727;
 }
-.heart-bg{
-  color:  #D84727;
-
+.heart-bg {
+  color: #d84727;
 }
-.bg{
-  background: #F1DDC9;
+.bg {
+  background: #f1ddc9;
 }
 /*FONTS*/
-.title{
-color:  #333333;
-font-size: 60px;
+.title {
+  color: #333333;
+  font-size: 60px;
 }
-.f-bg{
+.f-bg {
   color: #333333 !important;
 }
-.ff{
+.ff {
   font-family: 'Taviraj', serif !important;
 }
-.infoff{
+.infoff {
   font-family: 'Nunito', sans-serif;
 }
 /*SIZES*/
-.w-30{
+.ml-100 {
+  margin-left: 100px;
+}
+.w-30 {
   width: 25%;
 }
-.mt-25{
+.mt-25 {
   margin-top: 100px;
 }
-.my-8{
+.my-8 {
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.my-6{
+.my-6 {
   margin-top: 4rem !important;
   margin-bottom: 4rem !important;
 }
-.mx-100{
-  margin-left: 100px;
-  margin-right: 100px;
+.mx-100 {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
 }
-.top-10{
+.top-10 {
   top: -10%;
 }
-.z-index{
+.z-index {
   z-index: 10;
 }
-/*Hover*/
-
 
 /*Main*/
-.logo-inicio{
+.logo-inicio {
   width: 350px;
   height: 450px;
-  opacity: .9;
-  
+  opacity: 0.9;
 }
-.img-content{
+.img-content {
   top: 15%;
 }
-.content-main{
-  background: #F1DDC9 ;
+.content-main {
+  background: #f1ddc9;
   height: 450px !important;
+  top: 100px;
 }
-.img-box{
+.img-box {
   width: 130px;
   height: 100px;
 }
-.img-product{
+.img-product {
   width: 60px;
   height: 60px;
 }
-.img-side{
-  height: 500px;
+.img-side {
+  height: 400px;
   width: 100%;
-  top: 10%;
-  right: 20%;
+  margin: 50px 0px 0px -50px;
 }
-.side-content{
-  height: 500px;
+.side-container {
+  width: 650px !important;
+}
+.side-content {
+  height: 400px;
+  margin-right: 0 !important;
+}
 
-}
 @media screen and (max-width: 1024px) {
   /*BUTTONS*/
-.bg-btn{
-  width: 200px;
-  height: 50px;
-
-}
+  .bg-btn {
+    width: 200px;
+    height: 50px;
+  }
+  /*Sizes*/
+  .ml-100 {
+    margin-left: 50px;
+  }
+  .mx-100 {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
   /*Main*/
-  .logo-inicio{
+  .logo-inicio {
     width: 250px;
     height: 300px;
   }
-  .title{
-    color:  #333333;
+  .title {
     font-size: 36px;
-    }
-    .content-main{
-      height: 300px !important;
-    }
+  }
+  .content-main {
+    height: 300px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .products{
-    display: none;
+  /*Sizes*/
+  .ml-100 {
+    margin-left: 0px;
   }
-  .mx-100{
-    margin-left: 50px;
-    margin-right: 50px;
+  .my-6 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  .product-img {
+    width: 250px !important;
+    height: 280px !important;
+  }
+
+  /*Fonts*/
+  .infoff {
+    font-size: 14px;
   }
   /*Main*/
-  .logo-inicio{
-    width: 150px;
+  .logo-inicio {
+    width: 130px;
     height: 200px;
   }
-  .title{
-    color:  #333333;
+  .title {
     font-size: 21px;
-    }
-    .content-main{
-      height: 200px !important;
-      margin: 0px !important;
-      position: absolute;
-      left: 0;
-      max-width: 100% !important;
-    }
-    .infoff{
-      font-family: 'Nunito', sans-serif;
-      font-size: 11px;
-    }
+  }
+  .content-main {
+    height: 200px !important;
+    margin: 0px !important;
+    position: relative;
+    top: 15px;
+    left: 0;
+    max-width: 100% !important;
+  }
 
   /*Side*/
-  .img-side{
-    height: 300px;
+  .img-side {
+    height: 180px;
+    margin: 30px 0px 0px -30px;
   }
-  .side-content{
-    height: 300px;
+  .side-content {
+    height: 180px;
+  }
+  .side-container {
+    width: 300px !important;
+
+    margin-right: 0 !important;
+  }
+  .text-side {
+    font-size: 14px !important;
+  }
+  .text-s {
+    font-size: 18px !important;
+  }
+    /*Buttons*/
+  .btn-clear{
+    height: 30px;
+    font-size: 16px;
   
   }
-  .text-side{
-    font-size: 20px !important;
+  .cart-add{
+    font-size: 18px;
   }
-  .text-s{
-    font-size: 16px !important;
+  .btn-add{
+    width: 100% !important;
+    height: 35px !important;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 380px) {
-    /*Main*/
-    .logo-inicio{
-      width: 100px;
-      height: 150px;
-    }
-    .title{
-      color:  #333333;
-      font-size: 18px;
-      }
-      .content-main{
-        height: 150px !important;
-      }
-      .infoff{
-        font-family: 'Nunito', sans-serif;
-        font-size: 11px;
-      }
-    /*Side*/
-    .img-side{
-      height: 150px;
-    }
-    .side-content{
-      height: 150px;
-    
-    }
-    .text-side{
-      font-size: 16px !important;
-    }
-    .text-s{
-      font-size: 11px !important;
-    }
+
+  /*Buttons*/
+
+  .checkout {
+    font-size: 16px;
+    width: 152px !important;
+    height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Sizes*/
+
+  .my-6 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .mx-100 {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+  }
+  .product-img {
+    height: 200px !important;
+  }
+  /*Main*/
+  .logo-inicio {
+    width: 100px;
+    height: 150px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .content-main {
+    height: 150px !important;
+  }
+  .infoff {
+    font-size: 9px;
+  }
+  /*Side*/
+
+  .img-side {
+    height: 130px;
+    margin: 30px 0px 0px -30px;
+    width: 160px;
+  }
+  .side-content {
+    height: 130px;
+  }
+  .side-container {
+    width: 160px !important;
+  }
+  .text-side {
+    font-size: 10px !important;
+  }
+  .text-s {
+    font-size: 14px !important;
+  }
 }

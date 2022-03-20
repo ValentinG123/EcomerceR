@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AddCartFav from '../button/AddCartFav';
+import AddCar from '../button/AddCar';
 
-const Cards = ({ data, addToCart, addToFav }) => {
+const Cards = ({ product, addToCart, addToFav }) => {
   let cardStyle = {
     width: '225px',
     height: '400px',
   };
-  let { id, img, name, off, price, priceoff } = data;
+  let { id, img, name, off, price, priceoff } = product;
 
   return (
     <>
       <div
-        className="card bg-ligth col-3 mx-1 border-0 my-5"
+        className="card bg-ligth col-3 mx-1 border-0 my-5 card-card"
         key={id}
         style={cardStyle}
       >
@@ -32,7 +32,7 @@ const Cards = ({ data, addToCart, addToFav }) => {
           </div>
         </Link>
         <div className="add-cart">
-          <AddCartFav addToCart={addToCart} data={data} addToFav={addToFav} />
+          <AddCar addToCart={addToCart} data={product} addToFav={addToFav} />
         </div>
       </div>
     </>

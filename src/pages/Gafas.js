@@ -1,6 +1,6 @@
 import React from 'react'
 import {addToCart} from '../actions/shoppingActions'
-import GafasCards from '../components/Cards/GafasCards'
+import Cards from '../components/Cards/Cards'
 import { useSelector, useDispatch } from 'react-redux';
 const Gafas = () => {
    
@@ -14,11 +14,11 @@ const Gafas = () => {
     return (
       <div className='row d-flex justify-content-center'>
       {
-      newAccesorios.map((gafas) => (
-         <GafasCards
-         key={gafas.id}
-         gafas={gafas}
-         addToCart={() => dispatch(addToCart(gafas.id))}
+      newAccesorios.map((product) => (
+         <Cards
+         key={product.id}
+         product={product}
+         addToCart={() => dispatch(addToCart(product.id))}
 
          />
       ))

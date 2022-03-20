@@ -1,0 +1,6 @@
+/* SubMain */
+@media screen and (max-width: 768px) {
+    .submain-content{
+        display: none;
+    }
+}

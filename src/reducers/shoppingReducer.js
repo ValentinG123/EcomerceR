@@ -10,7 +10,8 @@ export const initialState = {
         name: 'Singo Maple',
         off: '20% Off',
         priceoff: '$ 1500.00',
-        price: 1264
+        price: 1200,
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
     },
     {
         id: uuid(),
@@ -19,7 +20,9 @@ export const initialState = {
         name: 'Singo Ebony',
         off: '25% Off',
         priceoff: '$ 1500.00',
-        price: 1264
+        price: 1125,
+                descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
     },
     {
         id: uuid(),
@@ -28,7 +31,9 @@ export const initialState = {
         name: 'Rakai Ebony',
         off: '15% Off',
         priceoff: '$ 1280.00',
-        price: 1118
+        price: 1088,
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
     },
     {
         id: uuid(),
@@ -37,16 +42,20 @@ export const initialState = {
         name: 'Kambas Mini',
         off: '10% Off',
         priceoff: '$ 1280.00',
-        price: 1024
+        price: 1152,
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
     },
     {
         id: uuid(),
         category:'accesorios',
-        off: '10% Off',
-        priceoff: '$ 1280.00',
+        off: '30% Off',
+        priceoff: '$ 700.00',
         img:'acc1.jpeg',
-        name: 'Pañuelos Tela',
+        name: 'Mori',
         price: 400,
+        descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
     id: uuid(),
@@ -54,8 +63,10 @@ export const initialState = {
     off: '10% Off',
     priceoff: '$ 1280.00',
     img:'acc3.jpeg',
-    name: 'Billetera Bulk',
-    price: 1760,
+    name: 'Sunda',
+    price: 1024,
+    descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
     id: uuid(),
@@ -63,8 +74,10 @@ export const initialState = {
     off: '10% Off',
 priceoff: '$ 1280.00',
 img:'acc2.jpeg',
-name: 'Golden Love',
+name: 'Tomia Ebony',
 price: 750,
+descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
     id: uuid(),
@@ -74,27 +87,41 @@ priceoff: '$ 1280.00',
 img:'acc4.jpeg',
 name: 'Billetera Ralex',
 price: 1500,
+descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
     id: uuid(),
     category:'gafas',
+    off: '10% Off',
+    priceoff: '$ 1280.00',
     img:'gafa1.jpeg',
-    name: 'Sunset Chiffon',
+    name: 'Sikka (Ebony & Maple)',
     price: 1750,
+    descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
 id: uuid(),
 category:'gafas',
+off: '10% Off',
+priceoff: '$ 1280.00',
 img:'gafa2.jpeg',
-name: 'Template Glass',
+name: 'Lore Walnut',
 price: 1200,
+descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 },
 {
 id: uuid(),
 category:'gafas',
+off: '10% Off',
+priceoff: '$ 1280.00',
 img:'gafa3.jpeg',
-name: 'Julio Sherpon',
+name: 'Alor',
 price: 1500,
+descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie ligula sit amet laoreet gravida. Vivamus non purus neque. Vivamus in urna varius, hendrerit mi eget, aliquet enim. Aliquam gravida justo non neque rhoncus sagittis. Praesent porta hendrerit accumsan. Donec.'
+
 }
 ],
 cart:[],
@@ -106,8 +133,8 @@ export function shoppingReducer(state = initialState,action){
         case ADD_TO_CART:
         {
             let newItem = state.productOff.find(product => product.id === action.payload)
-            
             let iteminCart = state.cart.find(item => item.id === newItem.id)
+
 
             return iteminCart
             ? {

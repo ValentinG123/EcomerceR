@@ -17,8 +17,6 @@ const Main = () => {
             to represent Rhino's skin.
           </p>
         </div>
-
-        <AddCar />
       </div>
     </div>
   );

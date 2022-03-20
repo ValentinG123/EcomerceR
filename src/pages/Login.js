@@ -1,32 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import useUser from '../hooks/useUser';
-import {firebase} from '../Firebase/firebase'
+import enviarEnlaceLogin from '../functions/sendLogin'
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate();
-  const { login, isLogged } = useUser();
-  
-  // const SingInWithFirebase = () => {
-  //   var google_provider = new firebase.auth.GoogleAuthProvider();
-  //   firebase.auth().singInWithPopup(google_provider)
-  //   .then((re)=>{
-  //     console.log(re)
-  //   })
-  //   .catch((err)=> {
-  //     console.log(err)
-  //   })
-  // }
-  useEffect(() => {
-    if (isLogged) navigate('/');
-  }, [isLogged, navigate]);
+ 
+   const navigate = useNavigate();
 
-  const handleSumbit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
-    login({ username, password });
-  };
+    const correo = e.target.formCorreo.value
+    enviarEnlaceLogin(correo)
+    window.localStorage.setItem("correo", correo)
+    navigate('/success')
+  }
   return (
+
     <section className="vh-100">
       <div className="container py-1">
         <div className="row d-flex justify-content-center align-items-center h-100">
@@ -50,25 +37,17 @@ const Login = () => {
                     <h5 className="fw-normal mb-3 pb-3">
                       Sign into your account
                     </h5>
-                    <form onSubmit={handleSumbit}>
+                    <form onSubmit={handleSubmit}>
                       <input
-                        value={username}
+                        type='email' 
                         autoComplete="on"
-                        placeholder="username"
-                        onChange={(e) => setUsername(e.target.value)}
+                        placeholder="Email"
+                        id='formCorreo'
                         className="form-control form-control-lg my-3"
                       />
 
-                      <input
-                        type="password"
-                        autoComplete="on"
-                        value={password}
-                        placeholder="password"
-                        onChange={(e) => setPassword(e.target.value)}
-                        className="form-control form-control-lg my-3"
-                      />
-
-                      <button className="btn btn-dark btn-lg btn-block" onClick={() => window.history.back(-1)}>
+    
+                      <button className="btn btn-dark btn-lg btn-block" type='submit'>
                         Iniciar
                       </button>
                     </form>
@@ -80,6 +59,7 @@ const Login = () => {
         </div>
       </div>
     </section>
+   
     // <button onClick={SingInWithFirebase}>Inciar con gogle</button>
 
   );

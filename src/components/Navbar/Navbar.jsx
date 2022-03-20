@@ -2,18 +2,15 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import useUser from '../../hooks/useUser';
+import { useUserContext } from '../../context/userContext';
+import Logout from '../../functions/logoutLogin';
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(true);
     return false;
   };
-
-  const { isLogged, logout } = useUser();
-  const state = useSelector((state) => state);
-  const { cart } = state.shopping;
+  const { usuario, cart } = useUserContext();
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container mx-100">
@@ -60,11 +57,11 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            {isLogged ? (
+            {usuario ? (
               <Link
                 to="/"
                 className=" cart text-decoration-none ff f-bg"
-                onClick={() => logout()}
+                onClick={() => Logout()}
               >
                 <i className="fas fa-sign-out-alt px-3 f-bg"></i>
                 Salir
@@ -79,7 +76,7 @@ const Navbar = () => {
         </div>
         <div className="d-flex align-items-center">
           <Link
-            className="cart-button rounded-circle border-0 position-relative mx-1"
+            className="cart-button rounded-circle border-0 position-relative mx-1 d-flex justify-content-center align-items-center"
             to="/carro"
           >
             {cart.length === 0 ? null : (
